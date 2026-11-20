@@ -1,41 +1,41 @@
 
-// let students = [
-//   { id: 1, name: "Адахан", age: 20 },
-//   { id: 2, name: "Эрлан", age: 19 },
-//   { id: 3, name: "Мириш", age: 21 }
-// ];
+let students = [
+  { id: 1, name: "Адахан", age: 20 },
+  { id: 2, name: "Эрлан", age: 19 },
+  { id: 3, name: "Мириш", age: 21 }
+];
 
-// function createStudent(id, name, age) {
-//   students.push({ id, name, age });
-//   console.log("Create кийин:", students);
-// }
+function createStudent(id, name, age) {
+  students.push({ id, name, age });
+  console.log("Create кийин:", students);
+}
 
-// function readStudents() {
-//   students.forEach(student => {
-//     console.log(`ID: ${student.id}, Аты: ${student.name}, Жашы: ${student.age}`);
-//   });
-//   console.log("Read кийин:", students);
-// }
+function readStudents() {
+  students.forEach(student => {
+    console.log(`ID: ${student.id}, Аты: ${student.name}, Жашы: ${student.age}`);
+  });
+  console.log("Read кийин:", students);
+}
 
-// function updateStudentAge(id, newAge) {
-//   const student = students.find(s => s.id === id);
-//   if (student) {
-//     student.age = newAge;
-//   } else {
-//     console.log(`ID ${id} менен студент табылган жок`);
-//   }
-//   console.log("Update кийин:", students);
-// }
+function updateStudentAge(id, newAge) {
+  const student = students.find(s => s.id === id);
+  if (student) {
+    student.age = newAge;
+  } else {
+    console.log(`ID ${id} менен студент табылган жок`);
+  }
+  console.log("Update кийин:", students);
+}
 
-// function deleteStudent(id) {
-//   students = students.filter(s => s.id !== id);
-//   console.log("Delete кийин:", students);
-// }
+function deleteStudent(id) {
+  students = students.filter(s => s.id !== id);
+  console.log("Delete кийин:", students);
+}
 
-// createStudent(4, "Урмат", 22);
-// readStudents();
-// updateStudentAge(2, 23);
-// deleteStudent(1);
+createStudent(4, "Урмат", 22);
+readStudents();
+updateStudentAge(2, 23);
+deleteStudent(1);
 
 
 
